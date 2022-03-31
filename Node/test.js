@@ -19,7 +19,7 @@ var password = "Password123"
 //client.execute(query,[username,displayName,password], {prepare: true})
   client.execute(query).then((result)=>{
     for (var i = 0; i < result.rows.length; i++) {
-        console.log(result.rows[i].displayname)
+        console.log(result.rows[i])
         // For each row it prints whats inside the rows
     } 
   })
